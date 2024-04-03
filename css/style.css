@@ -284,13 +284,17 @@ img {
 }
 
 .about-list {
-  /* display: flex;
-  gap: var(--regular-gap); */
+  display: flex;
+  flex-direction: column;
+
+  /* gap: var(--regular-gap); */
+  gap: 72px;
 }
 
 .about-item {
   /* flex-basis: calc((100% - 3 * var(--regular-gap)) / 4); */
-  margin-bottom: 72px;
+  flex-basis: 100%;
+  /* margin-bottom: 72px; */
 }
 
 .about-thumb-icon {
@@ -901,7 +905,7 @@ img {
   }
 
   .about-list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
   }
