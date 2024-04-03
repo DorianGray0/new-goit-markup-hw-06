@@ -952,6 +952,10 @@ img {
     text-align: left;
   }
 
+  .title {
+    font-weight: 500;
+  }
+
   .about-text {
     font-weight: 400;
   }
