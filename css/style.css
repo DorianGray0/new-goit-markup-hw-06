@@ -109,6 +109,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--primary-title-color);
 }
 
 .container {
@@ -329,10 +330,16 @@ img {
 /** ------------------------------------TEAM */
 
 .team {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  /* padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding); */
+  padding-top: 96px;
+  padding-bottom: 96px;
 
   background-color: var(--second-bgc);
+}
+
+.team > .container {
+  width: 296px;
 }
 
 .team-title {
@@ -343,11 +350,14 @@ img {
 
 .team-list {
   display: flex;
-  gap: var(--regular-gap);
+  flex-direction: column;
+  /* gap: var(--regular-gap); */
+  gap: 72px;
 }
 
 .team-item {
-  flex-basis: calc((100% - 3 * var(--regular-gap)) / 4);
+  /* flex-basis: calc((100% - 3 * var(--regular-gap)) / 4); */
+  flex-basis: 100%;
 
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -405,11 +415,6 @@ img {
 .team-soc-link:focus {
   background-color: var(--pressed-state-color);
 }
-
-/* .team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: black;
-} */
 
 .team-soc-icon {
 }
@@ -895,9 +900,6 @@ img {
 
 /** ===============================MEDIA===================== */
 
-@media screen and (min-width: 320px) {
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -912,6 +914,20 @@ img {
 
   .about-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .team > .container {
+    width: 584px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px var(--regular-gap);
+  }
+
+  .team-item {
+    flex-basis: calc((100% - var(--regular-gap)) / 2);
   }
 }
 
@@ -962,5 +978,24 @@ img {
 
   .about-text {
     font-weight: 400;
+  }
+
+  .team {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+
+  .team > .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .team-list {
+    gap: var(--regular-gap);
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 3 * var(--regular-gap)) / 4);
   }
 }
