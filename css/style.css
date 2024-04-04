@@ -686,9 +686,12 @@ img {
   transform: translate(-50%, -50%);
   transition: transform 350ms var(--cubic-regular);
 
-  width: 408px;
-  min-height: 584px;
-  padding: 24px;
+  /* width: 408px;
+  min-height: 584px; */
+  width: 288px;
+  min-height: 623px;
+  /* padding: 24px; */
+  padding: 24px 16px;
 
   border-radius: 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -709,6 +712,7 @@ img {
   width: 24px;
   height: 24px;
   margin-left: auto;
+  margin-right: 8px;
   margin-bottom: 24px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -960,6 +964,16 @@ img {
 
   .portfolio-item {
     flex-basis: calc((100% - var(--regular-gap)) / 2);
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 24px;
+  }
+
+  .modal-btn {
+    margin-right: 0;
   }
 }
 
