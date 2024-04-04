@@ -226,32 +226,47 @@ img {
 /** ---------------------------HERO */
 
 .hero {
-  max-width: 1440px;
-  min-height: 600px;
+  /* max-width: 1440px;
+  min-height: 600px; */
+  max-width: 320px;
+  min-height: 432px;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+  padding-top: 72px;
+  padding-bottom: 72px;
 
   text-align: center;
 
   background-color: var(--first-bgc);
-  background-image: var(--hero-gradient), url(../images/people-office.jpg);
+  background-image: var(--hero-gradient), url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/people-office-mob@2x.jpg);
+  }
+}
+
 .hero-title {
-  max-width: 496px;
-  font-size: 56px;
+  /* max-width: 496px; */
+  max-width: 216px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
+
+  /* font-size: 56px; */
+  font-size: 36px;
   color: var(--secondary-title-color);
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
 }
 
 .hero-title.heading {
-  line-height: 1.07;
+  /* line-height: 1.07; */
+  line-height: 1.1;
 }
 
 .hero-button {
@@ -886,6 +901,32 @@ img {
     margin: 0 auto;
   }
 
+  .hero {
+    max-width: 768px;
+    min-height: 436px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+    background-image: var(--hero-gradient), url(../images/people-office-tab.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient), url(../images/people-office-tab@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+
+    font-size: 56px;
+  }
+
+  .hero-title.heading {
+    line-height: 1.07;
+  }
+
   .about-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -929,6 +970,25 @@ img {
     padding-right: 15px;
 
     margin: 0 auto;
+  }
+
+  .hero {
+    max-width: 100%;
+    min-height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-image: var(--hero-gradient), url(../images/people-office.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient), url(../images/people-office@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
   }
 
   .about {
