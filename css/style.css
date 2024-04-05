@@ -653,15 +653,12 @@ img {
 .team-soc-icon {
 }
 
-.footer-subscribe-field {
-}
-
 .footer-subscribe-text {
   display: block;
   margin-bottom: 16px;
 }
 
-.footer-subscribe-wrap {
+.footer-subscribe-field {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -711,7 +708,6 @@ img {
 
   width: 165px;
   height: 40px;
-  padding: 8px 24px;
 
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -736,13 +732,8 @@ img {
   background-color: var(--pressed-state-color);
 }
 
-.subscribe-thumb {
-  width: 24px;
-  height: 24px;
-  fill: var(--secondary-title-color);
-}
-
 .subscribe-icon {
+  fill: var(--secondary-title-color);
 }
 
 /** --------------MODAL */
@@ -885,28 +876,22 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-form-thumb {
+.modal-form-icon {
   position: absolute;
   top: 50%;
   left: 16px;
-
-  width: 18px;
-  height: 24px;
 
   transform: translateY(-50%);
 
   transition: fill 250ms var(--cubic-regular);
 }
 
-/* .modal-form-input:focus + .modal-form-thumb {
+/* .modal-form-input:focus + .modal-form-icon {
   fill: var(--accent-color);
 } */
 
-.modal-form-wrap:focus-within .modal-form-thumb {
+.modal-form-wrap:focus-within .modal-form-icon {
   fill: var(--accent-color);
-}
-
-.modal-form-icon {
 }
 
 .modal-form-label.modal-textaria {
@@ -1096,7 +1081,7 @@ img {
     text-align: left;
   }
 
-  .footer-subscribe-wrap {
+  .footer-subscribe-field {
     flex-direction: row;
     gap: 24px;
   }
@@ -1254,7 +1239,7 @@ img {
     margin-left: 120px;
   }
 
-  .footer-subscribe-field {
+  .footer-subscribe-wrap {
     margin-left: 80px;
   }
 }
