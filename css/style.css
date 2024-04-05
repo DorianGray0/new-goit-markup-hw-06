@@ -386,7 +386,20 @@ img {
 }
 
 .about-thumb-icon {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+
+  background-color: var(--second-bgc);
+}
+
+@media screen and (max-width: 1157px) {
+  .about-thumb-icon {
+    display: none;
+  }
 }
 
 .about-icon {
@@ -1163,17 +1176,6 @@ img {
 
   .about-item {
     flex-basis: calc((100% - 3 * var(--regular-gap)) / 4);
-  }
-
-  .about-thumb-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
-
-    background-color: var(--second-bgc);
   }
 
   .about-title {
