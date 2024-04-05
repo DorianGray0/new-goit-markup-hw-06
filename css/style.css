@@ -276,7 +276,8 @@ img {
   margin-bottom: 48px;
 }
 
-.mob-contacts-item {
+.mob-contacts-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .mob-contacts-link {
