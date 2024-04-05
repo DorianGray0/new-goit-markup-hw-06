@@ -112,7 +112,7 @@ img {
 }
 
 .container {
-  width: 320px;
+  max-width: 320px;
   padding-left: 15px;
   padding-right: 16px;
   padding-left: 16px;
@@ -132,11 +132,12 @@ img {
 .header > .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
   display: flex;
-  gap: 76px;
+  gap: 120px;
   align-items: center;
 }
 
@@ -172,8 +173,7 @@ img {
 }
 
 .navigation-list {
-  display: flex;
-  gap: var(--header-gap);
+  display: none;
 }
 
 .navigation-item {
@@ -195,9 +195,7 @@ img {
 }
 
 .contacts-list {
-  display: flex;
-  gap: var(--header-gap);
-  margin-left: auto;
+  display: none;
 }
 
 .contacts-item {
@@ -205,11 +203,7 @@ img {
 
 .contacts-link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 
   transition: color 250ms var(--cubic-regular);
@@ -220,16 +214,100 @@ img {
   color: var(--pressed-state-color);
 }
 
+.header-burger {
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-icon {
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100%;
+  padding: 24px 24px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #fff;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms var(--cubic-regular), visibility 250ms var(--cubic-regular);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mob-menu > .modal-btn {
+  background-color: transparent;
+}
+
+.mob-navigation {
+  width: 151px;
+  margin-bottom: 40px;
+}
+
+.mob-navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-navigation-link {
+  display: block;
+  font-size: 36px;
+}
+
+.mob-contacts-list {
+  width: 193px;
+  margin-bottom: 48px;
+}
+
+.mob-contacts-item {
+}
+
+.mob-contacts-link {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mob-menu > .team-soc-list {
+  gap: 40px;
+}
+
+.team-soc-item {
+}
+
+.team-soc-link {
+}
+
+.team-soc-icon {
+}
+
 /** ---------------------------HERO */
 
 .hero {
-  /* max-width: 1440px;
-  min-height: 600px; */
   max-width: 320px;
   min-height: 432px;
   margin: 0 auto;
-  /* padding-top: 188px;
-  padding-bottom: 188px; */
+
   padding-top: 72px;
   padding-bottom: 72px;
 
@@ -249,12 +327,9 @@ img {
 }
 
 .hero-title {
-  /* max-width: 496px; */
   max-width: 216px;
-  /* margin-bottom: 48px; */
   margin-bottom: 72px;
 
-  /* font-size: 56px; */
   font-size: 36px;
   color: var(--secondary-title-color);
   margin-right: auto;
@@ -262,7 +337,6 @@ img {
 }
 
 .hero-title.heading {
-  /* line-height: 1.07; */
   line-height: 1.1;
 }
 
@@ -334,7 +408,7 @@ img {
 }
 
 .team > .container {
-  width: 296px;
+  max-width: 296px;
 }
 
 .team-title {
@@ -906,8 +980,29 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: var(--header-gap);
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .header-burger {
+    display: none;
   }
 
   .hero {
@@ -947,7 +1042,7 @@ img {
   }
 
   .team > .container {
-    width: 584px;
+    max-width: 584px;
   }
 
   .team-list {
@@ -1017,11 +1112,34 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
 
     margin: 0 auto;
+  }
+
+  .navigation {
+    gap: 76px;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: var(--header-gap);
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--header-gap);
+  }
+
+  .contacts-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .hero {
@@ -1089,7 +1207,7 @@ img {
   }
 
   .team > .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }

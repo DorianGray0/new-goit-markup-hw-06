@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="navigation">
           <a class="logo link" href="./index.html">Web<span class="studio">Studio</span></a>
@@ -46,8 +46,80 @@
             <a class="contacts-link link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
           </li>
         </ul>
+
+        <button type="button" class="header-burger">
+          <svg class="header-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu is-open">
+        <div>
+          <button class="modal-btn" type="button">
+            <svg class="modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav class="mob-navigation">
+            <ul class="mob-navigation-list">
+              <li class="mob-navigation-item">
+                <a class="mob-navigation-link title link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-navigation-item">
+                <a class="mob-navigation-link title link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="mob-navigation-item">
+                <a class="mob-navigation-link title link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <ul class="mob-contacts-list">
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-link link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+
+          <ul class="team-soc-list">
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link">
+                <svg class="team-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link">
+                <svg class="team-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link">
+                <svg class="team-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-link">
+                <svg class="team-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- SECTION 1 HERO -->
       <section class="hero">
