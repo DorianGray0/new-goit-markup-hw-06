@@ -87,7 +87,7 @@ img {
 .btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 
   cursor: pointer;
@@ -142,13 +142,13 @@ img {
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.13;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -306,13 +306,19 @@ img {
 
 .hero {
   max-width: 1440px;
-  min-height: 432px;
+  min-height: calc(100vh - 56px);
   margin: 0 auto;
 
   padding-top: 72px;
   padding-bottom: 72px;
 
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+
+  /* text-align: center; */
 
   background-color: var(--first-bgc);
   background-image: var(--hero-gradient), url(../images/people-office-mob.jpg);
@@ -329,12 +335,12 @@ img {
 
 .hero-title {
   max-width: 216px;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 
   font-size: 36px;
   color: var(--secondary-title-color);
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto; */
+  /* margin-left: auto; */
 }
 
 .hero-title.heading {
@@ -348,7 +354,7 @@ img {
   color: var(--secondary-title-color);
 
   background-color: var(--accent-color);
-  border-color: transparent;
+  border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
@@ -991,6 +997,11 @@ img {
     margin: 0 auto;
   }
 
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 23px;
+  }
+
   .navigation-list {
     display: flex;
     gap: var(--header-gap);
@@ -1013,9 +1024,10 @@ img {
   }
 
   .hero {
-    min-height: 436px;
+    min-height: calc(100vh - 72px);
     padding-top: 112px;
     padding-bottom: 112px;
+    gap: 36px;
 
     background-image: var(--hero-gradient), url(../images/people-office-tab.jpg);
   }
@@ -1028,7 +1040,6 @@ img {
 
   .hero-title {
     max-width: 496px;
-    margin-bottom: 36px;
 
     font-size: 56px;
   }
@@ -1152,6 +1163,7 @@ img {
     min-height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
+    gap: 48px;
 
     background-image: var(--hero-gradient), url(../images/people-office.jpg);
   }
@@ -1160,10 +1172,6 @@ img {
     .hero {
       background-image: var(--hero-gradient), url(../images/people-office@2x.jpg);
     }
-  }
-
-  .hero-title {
-    margin-bottom: 48px;
   }
 
   .about {
