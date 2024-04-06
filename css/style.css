@@ -936,6 +936,12 @@ img {
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-form-field {
+    align-items: center;
+  }
+}
+
 .modal-form-privacy {
 }
 
