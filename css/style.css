@@ -143,12 +143,12 @@ img {
 
 .logo {
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.13;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -310,7 +310,7 @@ img {
 /** ---------------------------HERO */
 
 .hero {
-  max-width: 320px;
+  max-width: 1440px;
   min-height: 432px;
   margin: 0 auto;
 
@@ -1016,7 +1016,6 @@ img {
   }
 
   .hero {
-    max-width: 768px;
     min-height: 436px;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -1153,7 +1152,6 @@ img {
   }
 
   .hero {
-    max-width: 1440px;
     min-height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
