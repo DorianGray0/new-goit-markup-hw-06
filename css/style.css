@@ -306,7 +306,7 @@ img {
 
 .hero {
   max-width: 1440px;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100% - 56px);
   margin: 0 auto;
 
   padding-top: 72px;
@@ -1024,7 +1024,7 @@ img {
   }
 
   .hero {
-    min-height: calc(100vh - 72px);
+    min-height: calc(100% - 72px);
     padding-top: 112px;
     padding-bottom: 112px;
     gap: 36px;
