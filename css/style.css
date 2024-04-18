@@ -321,7 +321,7 @@ img {
   /* text-align: center; */
 
   background-color: var(--first-bgc);
-  background-image: var(--hero-gradient), url(../images/people-office-mob.jpg);
+  background-image: var(--hero-gradient), url(../images/people-office-mob.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -329,7 +329,7 @@ img {
 
 @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/people-office-mob@2x.jpg);
+    background-image: var(--hero-gradient), url(../images/people-office-mob@2x.webp);
   }
 }
 
@@ -1029,12 +1029,12 @@ img {
     padding-bottom: 112px;
     gap: 36px;
 
-    background-image: var(--hero-gradient), url(../images/people-office-tab.jpg);
+    background-image: var(--hero-gradient), url(../images/people-office-tab.webp);
   }
 
   @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: var(--hero-gradient), url(../images/people-office-tab@2x.jpg);
+      background-image: var(--hero-gradient), url(../images/people-office-tab@2x.webp);
     }
   }
 
@@ -1165,12 +1165,12 @@ img {
     padding-bottom: 188px;
     gap: 48px;
 
-    background-image: var(--hero-gradient), url(../images/people-office.jpg);
+    background-image: var(--hero-gradient), url(../images/people-office.webp);
   }
 
   @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: var(--hero-gradient), url(../images/people-office@2x.jpg);
+      background-image: var(--hero-gradient), url(../images/people-office@2x.webp);
     }
   }
 
