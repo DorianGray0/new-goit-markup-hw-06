@@ -1160,8 +1160,7 @@ img {
   }
 
   .hero {
-    /* min-height: 600px; */
-    min-height: calc(100% + 72px);
+    min-height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
     gap: 48px;
